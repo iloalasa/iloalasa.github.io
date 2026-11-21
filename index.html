@@ -1,4 +1,15 @@
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
-  ilo alasa
-  <input type="text">
+  <h1>ilo alasa</h1><br>
+  <input type="text" id="terms">
+  <button type="button" id="enter">o alasa!</button>
 </div>
+
+<script>
+const textbox = document.getElementById("terms");
+const button = document.getElementById("enter");
+
+button.addEventListener("click", () => {
+  const text = textbox.value;
+  console.log(text);
+});
+</script>
