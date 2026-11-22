@@ -12,15 +12,13 @@
 
 <script>
 const response = fetch('https://iloalasa.github.io/sites.txt');
-const data = response.text();
-
 const textbox = document.getElementById("terms");
 const button = document.getElementById("enter");
 
 
 button.addEventListener("click", () => {
   const search = textbox.value.toLowerCase();
-  
+  const data = response.text();
   //while (data.includes(search)) {
     name = data.indexOf(search);
     url = data[name].indexOf("-");
