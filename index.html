@@ -27,8 +27,8 @@ button.addEventListener("click", () => {
   getData();
   const search = textbox.value.toLowerCase();
   
-  const response = await fetch('https://iloalasa.github.io/sites.txt'); 
-  const data = await response.text();
+  const response = fetch('https://iloalasa.github.io/sites.txt'); 
+  const data = response.text();
   
   //while (data.includes(search)) {
     name = data.indexOf(search);
