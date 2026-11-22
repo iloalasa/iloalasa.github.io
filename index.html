@@ -11,14 +11,19 @@
 <ul id="results">
 
 <script>
-const response = fetch('https://iloalasa.github.io/sites.txt');
+
 const textbox = document.getElementById("terms");
 const button = document.getElementById("enter");
-
-
+async function getText() {
+  const response = await fetch('https://iloalasa.github.io/sites.txt');
+  const texts = await response.text();
+  console.log(text);
+  return texts;
+}
+getText();
 button.addEventListener("click", () => {
   const search = textbox.value.toLowerCase();
-  const data = response.text();
+  data = getText();
   //while (data.includes(search)) {
     name = data.indexOf(search);
     url = data[name].indexOf("-");
