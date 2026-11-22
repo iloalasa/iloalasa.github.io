@@ -14,8 +14,8 @@
 const textbox = document.getElementById("terms");
 const button = document.getElementById("enter");
 
-const response = await fetch(iloalasa.github.io/sites.txt);
-const const text = await response.text();
+const response = fetch(iloalasa.github.io/sites.txt);
+const const text = response.text();
 
 button.addEventListener("click", () => {
   const search = textbox.value.toLowerCase();
