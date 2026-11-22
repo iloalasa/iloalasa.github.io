@@ -15,17 +15,17 @@ const textbox = document.getElementById("terms");
 const button = document.getElementById("enter");
 
 const response = fetch("iloalasa.github.io/sites.txt");
-const text = response.text;
+const listtext = response.text;
 
 button.addEventListener("click", () => {
   const search = textbox.value.toLowerCase();
-  //while (text.includes(search)) {
-    name = text.indexOf(search)
-    url = text[name].indexOf("-")
+  //while (listtext.includes(search)) {
+    name = listtext.indexOf(search)
+    url = listtext[name].indexOf("-")
     console.log(name)
     console.log(url)
-    console.log(text)
+    console.log(listtext)
   //}
-  console.log(text);
+  console.log(listtext);
 });
 </script>
