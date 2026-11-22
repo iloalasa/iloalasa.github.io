@@ -16,7 +16,7 @@ const button = document.getElementById("enter");
 
 async function getData() {
   const response = await fetch('https://iloalasa.github.io/sites.txt');
-  const data = await response.json();
+  const data = await response.text();
   console.log(data);
 }
 
