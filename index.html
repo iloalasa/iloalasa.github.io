@@ -20,16 +20,17 @@ async function getData() {
   console.log(data);
 }
 
-getData();
+
 
 button.addEventListener("click", () => {
+  getData();
   const search = textbox.value.toLowerCase();
   //while (data.includes(search)) {
-    name = data.indexOf(search)
-    url = data[name].indexOf("-")
-    console.log(name)
-    console.log(url)
-    console.log(data)
+    name = data.indexOf(search);
+    url = data[name].indexOf("-");
+    console.log(name);
+    console.log(url);
+    console.log(data);
   //}
   console.log(data);
 });
